@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles/style.css" />
+  </head>
+  <body>
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>CSS</th>
+          <th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Universal Selector</td>
+          <td>*</td>
+          <td>Select all elemets</td>
+        </tr>
+        <tr>
+          <td>Type Selector</td>
+          <td>div</td>
+          <td>Select elements of that type</td>
+        </tr>
+        <tr>
+          <td>Class Selector</td>
+          <td>.c</td>
+          <td>Select elements with that class</td>
+        </tr>
+        <tr>
+          <td>Id Selector</td>
+          <td>#id</td>
+          <td>Select elements with that id</td>
+        </tr>
+        <tr>
+          <td>Descendant Selector</td>
+          <td>div a</td>
+          <td>Select elements that are descendants of the first element</td>
+        </tr>
+        <tr>
+          <td>Direct Child Selector</td>
+          <td>div > a</td>
+          <td>Select elements that are direct children of the first element</td>
+        </tr>
+        <tr>
+          <td>General Sibling Selector</td>
+          <td>div ~ a</td>
+          <td>
+            Select elements that are siblings of the first element and come
+            after the first element
+          </td>
+        </tr>
+        <tr>
+          <td>Adjacent Sibling Selector</td>
+          <td>div + a</td>
+          <td>
+            Select elements that are siblings of the first element and come
+            directly after the first element
+          </td>
+        </tr>
+        <tr>
+          <td>Has Attribute</td>
+          <td>[a]</td>
+          <td>Select elements that have that attribute</td>
+        </tr>
+        <tr>
+          <td>Exact Attribute</td>
+          <td>[a=”1”]</td>
+          <td>
+            Select elements that have that attribute with exactly that value
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <div>
+      <p>Сюда этот цвет</p>
+      <p class="black">Сюда этот цвет</p>
+      <p id="orange">Сюда этот цвет</p>
+      <p>Сюда этот цвет</p>
+      <p>Сюда этот цвет</p>
+      <p id="purple">Сюда этот цвет</p>
+      <p class="pink">Сюда этот цвет</p>
+      <p style="background-color: blue; color: white">Сюда этот цвет</p>
+      <p>Сюда этот цвет</p>
+      <p>Сюда этот цвет</p>
+    </div>
+  </body>
+</html>

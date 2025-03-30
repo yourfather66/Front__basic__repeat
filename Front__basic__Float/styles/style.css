@@ -1,0 +1,164 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  padding-top: 20px;
+  background-color: gray;
+}
+
+.clearfix::after {
+  clear: both;
+  display: block;
+  content: "";
+}
+
+.example__main__box {
+  width: 900px;
+  padding: 10px 0;
+  border: 3px solid rgb(255, 242, 0);
+  margin: 0 auto 40px;
+  background-color: rgb(255, 217, 0);
+  font-size: 0;
+}
+
+.first__exam__box1 {
+  float: left;
+  height: 100px;
+  width: 100px;
+
+  background-color: blue;
+}
+
+.first__exam__box2 {
+  float: right;
+  height: 100px;
+  width: 100px;
+
+  background-color: blue;
+}
+
+.second__exam__box1 {
+  float: left;
+  height: 100px;
+  width: 100px;
+  background-color: blue;
+}
+
+.second__exam__box2 {
+  float: right;
+}
+
+.second__exam__inside {
+  height: 50px;
+  width: 50px;
+  background-color: blue;
+  display: inline-block;
+  margin: 25px 10px;
+}
+
+.third__exam__inside {
+  height: 100px;
+  width: 100px;
+  background-color: blue;
+  display: inline-block;
+  margin-left: 10px;
+}
+
+.third__exam__box1 {
+  float: left;
+}
+
+.third__exam__box2 {
+  float: right;
+}
+
+.third__exam__box1 div:first-child {
+  margin: 0;
+}
+
+.fourth__exam__wrap {
+  width: 50%;
+  display: inline-block;
+}
+
+.fourth__exam__box1 {
+  float: right;
+  padding-right: 10px;
+}
+
+.fourth__exam__box1 div {
+  width: 250px;
+  height: 250px;
+  background-color: blue;
+}
+
+.fourth__exam__box2 {
+  float: left;
+  padding-left: 10px;
+}
+
+.fourth__exam__box2 div {
+  width: 250px;
+
+  height: 120px;
+
+  background-color: blue;
+}
+
+.fourth__exam__box2 div:not(:last-of-type) {
+  margin-bottom: 10px;
+}
+
+.fourth__exam__wrap1 {
+  width: 70%;
+  display: inline-block;
+}
+
+.fourth__exam__wrap2 {
+  width: 30%;
+  display: inline-block;
+}
+
+.test__main {
+  width: 900px;
+  padding: 10px 0;
+  border: 3px solid rgb(255, 242, 0);
+  margin: 0 auto 40px;
+  background-color: rgb(255, 217, 0);
+  font-size: 0;
+}
+.wrap__test {
+  width: 41%;
+  display: inline-block;
+}
+
+.wrap__test2 {
+  width: 59%;
+  display: inline-block;
+}
+.left__box__test {
+  width: 250px;
+  height: 250px;
+  background-color: blue;
+  float: left;
+}
+
+.right__box__test {
+  float: left;
+  margin-left: 20px;
+}
+
+.right__box__inside {
+  width: 250px;
+
+  height: 120px;
+
+  background-color: blue;
+}
+
+.right__box__test div:not(:last-of-type) {
+  margin-bottom: 10px;
+}

@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form action="https://fom.in.ua/echo">
+      <h1 style="color: darkorchid">Search</h1>
+      <label for="region1">Region:</label>
+      <br />
+      <input
+        list="region_list"
+        id="region1"
+        name="region"
+        placeholder="All Ucraine"
+      />
+      <datalist id="region_list">
+        <option value="All Ucraine">All regions</option>
+        <option value="Odessa">Odessa region</option>
+        <option value="Kiev">Kiev region</option>
+        <option value="Dnepr">Dnepr region</option>
+        <option value="Nikolaev">Nikolaev region</option>
+      </datalist>
+      <br /><br />
+      <label for="carName">Car name:</label>
+      <br />
+      <input
+        placeholder="All cars"
+        list="carNameList"
+        name="carName"
+        id="carName"
+      />
+      <datalist id="carNameList">
+        <option value="Volkswagen"></option>
+        <option value="Audi"></option>
+        <option value="BMW"></option>
+        <option value="Mercedes"></option>
+      </datalist>
+      <input type="submit" name="submit" value="Search" />
+      <hr
+        style="
+          color: black;
+          border: 0;
+          margin: 20px 0;
+          width: 100%;
+          border-top: 3px solid red;
+        "
+      />
+      <label for="carBody">Car body:</label>
+      <input
+        placeholder="All car bodyes"
+        list="carBodyList"
+        id="carBody"
+        name="carBody"
+      />
+      <datalist id="carBodyList">
+        <option value="All car bodyes"></option>
+        <option value="Sedan"></option>
+        <option value="Station wagon"></option>
+        <option value="Hatchback"></option>
+        <option value="Crossover"></option>
+      </datalist>
+      <label for="countryOrigin"> Country of origin: </label>
+      <input list="countryOriginList" id="countryOrigin" name="countryOrigin" />
+      <datalist id="countryOriginList">
+        <option value="Ucraine"></option>
+        <option value="Poland"></option>
+        <option value="USA"></option>
+      </datalist>
+      <label for="minPrice"> Min price: </label>
+      <input
+        type="number"
+        id="minPrice"
+        min="0"
+        max="1000000"
+        step="100"
+        value="0"
+        name="minPrice"
+      />
+      <label for="maxPrice"> Max price: </label>
+      <input
+        type="number"
+        id="maxPrice"
+        min="0"
+        max="1000000"
+        step="100"
+        value="0"
+        name="maxPrice"
+      />
+      <label for="yearProductFrom"> Year of production: </label>
+      <input
+        type="number"
+        id="yearProductFrom"
+        step="1"
+        min="1950"
+        max="2025"
+        name="yearProductFrom"
+      />
+      <label for="yearProductTo"> Year of product to: </label>
+      <input
+        type="number"
+        id="yearProductTo"
+        step="1"
+        max="2025"
+        min="1950"
+        name="yearProductTo"
+      />
+      <label for="carCondition">Car condition:</label>
+      <select name="carCondition" id="carCondition">
+        <option value="enterCond">Enter condition</option>
+        <option value="new">New</option>
+        <option value="broken">Broken</option>
+        <option value="seat and drive">Seat and drive</option>
+      </select>
+      <label for="fuelType">Fuel type:</label>
+      <select name="fuelType" id="fuelType">
+        <option value="fuelType">Fuel type</option>
+        <option value="petrol">Petrol</option>
+        <option value="dizel">Dizel</option>
+        <option value="gazBenzin">Gaz/Benzin</option>
+      </select>
+
+      <hr
+        style="
+          border: 0;
+          margin: 20px 0;
+          width: 100%;
+          border-top: 3px solid blueviolet;
+        "
+      />
+      <label for="transmissionAuto">Transmission type: Automatic</label>
+      <input
+        type="radio"
+        id="transmissionAuto"
+        name="transmission"
+        value="automatic"
+      />
+      <label for="transmissionManual"> Manual </label>
+      <input
+        type="radio"
+        id="transmissionManual"
+        name="transmission"
+        value="Manual"
+      />
+      <br /><br />
+      <label for="carColor">Car color:</label>
+      <input type="color" id="carColor" name="carColor" value="#800080" />
+      <br /><br />
+      <label for="comfort">Comfort:</label>
+      <span>Leather interior</span>
+      <input
+        type="checkbox"
+        id="comfort"
+        name="comfort"
+        value="leatherInterior"
+      />
+      <span>Sunroof</span>
+      <input type="checkbox" id="comfort" name="comfort" value="sunroof" />
+      <span>Heated seats</span>
+      <input type="checkbox" id="comfort" name="comfort" value="heatedSeats" />
+      <span>Climate Сontrol</span>
+      <input
+        type="checkbox"
+        id="comfort"
+        name="comfort"
+        value="climateСontrol"
+      />
+    </form>
+    <a href="./pages/registration.html" style="text-decoration: none"
+      >Registration
+    </a>
+    <a
+      href="./pages/authorization.html"
+      style="text-decoration: none; margin-left: 50px"
+      >Autorisation</a
+    >
+  </body>
+</html>
